@@ -10,6 +10,11 @@ class SecondThread (threading.Thread):
         while True:
             print 'second'
 
-FirstThread().start()
-SecondThread().start()
+f1 = FirstThread()
+f1.daemon = True
+f2 = SecondThread()
+f2.daemon = True
+f1.start()
+f2.start()
+
 
