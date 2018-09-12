@@ -1,9 +1,9 @@
 import sys
 
 def main():
-    print "This is me putting a print line on the third branch"
-    for p in sys.path:
-        print p
+    print "hello moon"
+    for i,p in enumerate(sys.path):
+        print "Path # {0:d} = {1:s}".format(i,p)
 
     print "Also adding code where it hasn't been before"
     return
