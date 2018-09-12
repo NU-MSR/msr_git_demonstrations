@@ -1,4 +1,5 @@
 import threading
+import time
 
 class FirstThread (threading.Thread):
     def run (self):
@@ -17,4 +18,5 @@ f2.daemon = True
 f1.start()
 f2.start()
 
-
+while True:
+    time.sleep(1)
