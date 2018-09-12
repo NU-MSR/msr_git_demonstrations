@@ -1,5 +1,8 @@
+import sys
+
 def main():
-    print "Hello world!"
+    for p in sys.path:
+        print p
 
 if __name__ == '__main__':
     main()
